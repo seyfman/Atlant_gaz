@@ -1,0 +1,178 @@
+.modal {
+  display: none;
+
+  &--active {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(45, 45, 45, 0.9);
+  }
+
+  &__inner {
+    position: absolute;
+    padding: 30px 30px 39px;
+    max-width: 462px;
+    width: 100%;
+    height: 408px;
+    left: calc(50% - 232px);
+    top: calc(50% - 204px);
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 33px;
+  }
+
+  &__top {
+    margin-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 350px;
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $title-color;
+  }
+
+  &__close-btn {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    background-image: url(../image/icon/modal-close.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__form-name,
+  &__form-tel {
+    width: 100%;
+    padding: 17px 22px;
+    border: 1px solid #dedede;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    &::placeholder {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: rgba(45, 45, 45, 0.5);
+    }
+  }
+
+  &__form-name {
+    margin-bottom: 24px;
+  }
+
+  &__form-tel {
+    margin-bottom: 42px;
+  }
+
+  &__form-btn {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 87px;
+    background-image: url(../image/btn.jpg);
+    background-size: 100% 100%;
+    border: none;
+    border-radius: 11px;
+    position: relative;
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $white;
+  }
+
+  &__text {
+    position: absolute;
+    top: 103%;
+    left: 0;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+
+    color: rgba(#ffffff, 0.6);
+  }
+}
+
+.modal-thanks {
+  position: fixed;
+  display: none;
+  background: #222222;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  &__inner {
+    margin-top: 160px;
+  }
+
+  &__title {
+    margin-bottom: 26px;
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $title-color;
+  }
+
+  &__subtitle {
+    margin-bottom: 51px;
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__btn {
+    display: block;
+
+    margin: 0 auto;
+    width: 395px;
+    height: 87px;
+    background-image: url(../image/btn.jpg);
+    background-size: 100% 100%;
+    border: none;
+    border-radius: 11px;
+    position: relative;
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $white;
+  }
+
+  &--active {
+    display: block;
+  }
+}
